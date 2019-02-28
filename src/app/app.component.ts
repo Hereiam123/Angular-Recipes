@@ -9,7 +9,8 @@ export class AppComponent {
   title: string = "angular-recipe";
   loadedFeature: string = "recipe";
 
-  //Which navigation feature is requested
+  //Which navigation feature is requested will
+  //determine the overall view displayed in the app component
   onNavigate(feature: string) {
     this.loadedFeature = feature;
   }
