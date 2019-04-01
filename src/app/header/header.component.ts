@@ -18,6 +18,10 @@ export class HeaderComponent {
     });
   }
 
+  onLogout() {
+    this.authService.logout();
+  }
+
   onGetData() {
     this.dataStorageService.getRecipes();
   }
