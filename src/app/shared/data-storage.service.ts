@@ -18,7 +18,7 @@ export class DataStorageService {
     return this.http
       .get("https://angular-recipe-9640e.firebaseio.com/recipes.json")
       .subscribe(response => {
-        const recipes: any = response;
+        const recipes: Recipe[] = <Recipe[]>response;
         this.recipeService.setRecipes(recipes);
       });
   }
